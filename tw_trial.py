@@ -23,7 +23,7 @@ else:
 
 # get user and last 20 followers
 '''
-user = api.get_user("ReclusiveCoder")
+user = api.get_user("TwitterHandle")
 
 print("User details:")
 print(user.name)
@@ -34,10 +34,6 @@ print("Last 20 Followers:")
 for follower in user.followers():
     print(follower.name)
 '''
-
-# searching tweets
-for tweet in api.search(q="committed suicide",  rpp=10):
-    print(f"--> {tweet.user.name}:   {tweet.text}")
 
 
 

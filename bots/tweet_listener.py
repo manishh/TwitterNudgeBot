@@ -9,7 +9,7 @@ logger = logging.getLogger()
 
 class TweetListener(tweepy.StreamListener):
     BOT_HANDLE = 'ReclusiveCoder'
-    IGNORE_TERMS = ["SSR", "Sushant"]
+    IGNORE_TERMS = ["SSR", "Sushant"]   # ignore these tweets
     TERMS_MAP = {"committed suicide": "died by suicide", "commits suicide": "dies by suicide",
                  "committing suicide": "dying by suicide", "commit suicide": "die by suicide"}
     correctionCount = 0
